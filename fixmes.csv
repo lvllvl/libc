@@ -1,49 +1,49 @@
 Labeled Added,Category,File Path,Line Number,Comment
-FALSE,windows, ./src/windows/mod.rs,267,"fill this out with a struct"
-FALSE,1.0,./src/unix/linux_like/linux/uclibc/mips/mips32/mod.rs,260,"(1.0) this is actually a union"
+TRUE,windows, ./src/windows/mod.rs,267,"fill this out with a struct"
+TRUE,1.0,./src/unix/linux_like/linux/uclibc/mips/mips32/mod.rs,260,"(1.0) this is actually a union"
 TRUE,1.0,./src/unix/linux_like/linux/uclibc/mips/mips64/mod.rs,191,"(1.0): this is actually a union"
-FALSE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,145,
-FALSE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,152,
-FALSE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,198,
-FALSE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,209,
-FALSE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,219,
-FALSE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,224,
-FALSE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,242,
-FALSE, linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,255,
-FALSE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,263,
-FALSE,union,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,267,(1.0): this is actually a union
-FALSE,union,./src/unix/linux_like/linux/uclibc/arm/mod.rs,246,(1.0) this is actually a union
-FALSE,c_long,./src/unix/linux_like/linux/uclibc/arm/mod.rs,898,": should be a `c_long` too, but a bug slipped in."
-FALSE,linux,./src/unix/linux_like/linux/mod.rs,79,: fill this out with a struct
+TRUE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,145,
+TRUE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,152,
+TRUE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,198,
+TRUE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,209,
+TRUE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,219,
+TRUE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,224,
+TRUE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,242,
+TRUE, linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,255,
+TRUE,linux,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,263,
+TRUE,1.0,./src/unix/linux_like/linux/uclibc/x86_64/mod.rs,267,(1.0): this is actually a union
+TRUE,1.0,./src/unix/linux_like/linux/uclibc/arm/mod.rs,246,(1.0) this is actually a union
+TRUE,linux,./src/unix/linux_like/linux/uclibc/arm/mod.rs,898,": should be a `c_long` too, but a bug slipped in."
+TRUE,linux,./src/unix/linux_like/linux/mod.rs,79,: fill this out with a struct
 TRUE,1.0,./src/unix/linux_like/linux/mod.rs,329,"(1.0): Change to the commented variant, see https://github.com/rust-lang/libc/pull/4148#discussion_r1857511742"
 TRUE,1.0,./src/unix/linux_like/linux/mod.rs,442,(1.0): this is actually a union
 TRUE,garando,./src/unix/linux_like/linux/mod.rs,1202,"(garando): replace length with `2 * PTP_MAX_SAMPLES + 1` when supported"
 TRUE,1.0,./src/unix/linux_like/linux/mod.rs,1676,(1.0): this field was renamed to `len` in Linux 5.11
-FALSE,linux,./src/unix/linux_like/linux/mod.rs,1839,": .field('d_name', &self.d_name)"
-FALSE,linux,./src/unix/linux_like/linux/mod.rs,1877,": .field('d_name', &self.d_name)"
-FALSE,linux,./src/unix/linux_like/linux/mod.rs,1903,": .field('size', &self.size)"
-FALSE,linux,./src/unix/linux_like/linux/mod.rs,1925,": .field('size', &self.size)"
-FALSE,linux,./src/unix/linux_like/linux/mod.rs,1947,": .field('size', &self.size)"
+TRUE,linux,./src/unix/linux_like/linux/mod.rs,1839,": .field('d_name', &self.d_name)"
+TRUE,linux,./src/unix/linux_like/linux/mod.rs,1877,": .field('d_name', &self.d_name)"
+TRUE,linux,./src/unix/linux_like/linux/mod.rs,1903,": .field('size', &self.size)"
+TRUE,linux,./src/unix/linux_like/linux/mod.rs,1925,": .field('size', &self.size)"
+TRUE,linux,./src/unix/linux_like/linux/mod.rs,1947,": .field('size', &self.size)"
 TRUE,linux,./src/unix/linux_like/linux/mod.rs,5324,(offset_of): use `core::mem::offset_of!` once that is available
 TRUE,ctest,./src/unix/linux_like/linux/mod.rs,5856,(ctest) the `garando_syntax` crate (used by ctest2 in the CI test suite)
-FALSE,union,./src/unix/linux_like/linux/gnu/b64/s390x.rs,215,: This is actually a union.
-FALSE,linux,./src/unix/linux_like/linux/gnu/b64/x86_64/mod.rs,311,: the shadow stack field requires glibc >= 2.28.
-FALSE,linux,./src/unix/linux_like/linux/gnu/b64/x86_64/mod.rs,360,": .field('xmm_space', &self.xmm_space)"
-FALSE,linux,./src/unix/linux_like/linux/gnu/b64/x86_64/mod.rs,666,: perharps for later
-FALSE,linux,./src/unix/linux_like/linux/gnu/b64/aarch64/mod.rs,604,: enable these again once linux-api-headers are up to date enough on CI.
+TRUE,union,./src/unix/linux_like/linux/gnu/b64/s390x.rs,215,: This is actually a union.
+TRUE,linux,./src/unix/linux_like/linux/gnu/b64/x86_64/mod.rs,311,: the shadow stack field requires glibc >= 2.28.
+TRUE,linux,./src/unix/linux_like/linux/gnu/b64/x86_64/mod.rs,360,": .field('xmm_space', &self.xmm_space)"
+TRUE,linux,./src/unix/linux_like/linux/gnu/b64/x86_64/mod.rs,666,: perharps for later
+TRUE,linux,./src/unix/linux_like/linux/gnu/b64/aarch64/mod.rs,604,: enable these again once linux-api-headers are up to date enough on CI.
 TRUE,1.0,./src/unix/linux_like/linux/gnu/mod.rs,383,(1.0) this is actually a union
 TRUE,off64,./src/unix/linux_like/linux/gnu/mod.rs,434,(off64): visible fields depend on __USE_FILE_OFFSET64
-FALSE,linux,./src/unix/linux_like/linux/gnu/mod.rs,590,": .field('ut_host', &self.ut_host)"
-FALSE,union,./src/unix/linux_like/linux/musl/b64/s390x.rs,66,: This is actually a union.
-FALSE,musl,./src/unix/linux_like/linux/musl/b64/x86_64/mod.rs,208,": .field('xmm_space', &self.xmm_space)"
+TRUE,linux,./src/unix/linux_like/linux/gnu/mod.rs,590,": .field('ut_host', &self.ut_host)"
+TRUE,union,./src/unix/linux_like/linux/musl/b64/s390x.rs,66,: This is actually a union.
+TRUE,musl,./src/unix/linux_like/linux/musl/b64/x86_64/mod.rs,208,": .field('xmm_space', &self.xmm_space)"
 TRUE,union,./src/unix/linux_like/linux/musl/mod.rs,135,(union): C implementation uses unions
 TRUE,musl,./src/unix/linux_like/linux/musl/mod.rs,361,(musl): enable on all targets once CI musl is updated
 TRUE,ctest,./src/unix/linux_like/linux/musl/mod.rs,419,(ctest): length should be `32 - 2 * core::mem::size_of::<*const ()>()`
-FALSE,musl,./src/unix/linux_like/linux/musl/mod.rs,443,: musl added paddings and adjusted
-FALSE,musl,./src/unix/linux_like/linux/musl/mod.rs,535,": .field('__reserved', &self.__reserved)"
-FALSE,ut_host,./src/unix/linux_like/linux/musl/mod.rs,592,
-FALSE,musl,./src/unix/linux_like/linux/musl/b32/hexagon.rs,236, check these
-FALSE,musl,./src/unix/linux_like/linux/musl/b32/hexagon.rs,289,
+TRUE,musl,./src/unix/linux_like/linux/musl/mod.rs,443,: musl added paddings and adjusted
+TRUE,musl,./src/unix/linux_like/linux/musl/mod.rs,535,": .field('__reserved', &self.__reserved)"
+TRUE,ut_host,./src/unix/linux_like/linux/musl/mod.rs,592,
+TRUE,musl,./src/unix/linux_like/linux/musl/b32/hexagon.rs,236, check these
+TRUE,musl,./src/unix/linux_like/linux/musl/b32/hexagon.rs,289,
 FALSE,union,./src/unix/linux_like/mod.rs,169, This should be a union
 FALSE,linux,./src/unix/linux_like/mod.rs,350,": .field('sun_path', &self.sun_path)"
 FALSE,linux,./src/unix/linux_like/mod.rs,379,": .field('__ss_pad2', &self.__ss_pad2)"
