@@ -3186,7 +3186,7 @@ fn test_neutrino(target: &str) {
 
     cfg.skip_type(move |ty| {
         match ty {
-            // FIXME(neutrino): `sighandler_t` type is incorrect, see:
+            // FIXME(sighandler): `sighandler_t` type is incorrect, see:
             // https://github.com/rust-lang/libc/issues/1359
             "sighandler_t" => true,
 
@@ -3681,7 +3681,7 @@ fn test_linux(target: &str) {
             return true;
         }
         match ty {
-            // FIXME(linux): `sighandler_t` type is incorrect, see:
+            // FIXME(sighandler): `sighandler_t` type is incorrect, see:
             // https://github.com/rust-lang/libc/issues/1359
             "sighandler_t" => true,
 
@@ -3996,7 +3996,7 @@ fn test_linux(target: &str) {
             // See: https://github.com/rust-lang/libc/issues/1356
             "ENOATTR" => true,
 
-            // FIXME(linux): SIGUNUSED was removed in glibc 2.26
+            // FIXME(deprecated): SIGUNUSED was removed in glibc 2.26
             // Users should use SIGSYS instead.
             "SIGUNUSED" => true,
 
